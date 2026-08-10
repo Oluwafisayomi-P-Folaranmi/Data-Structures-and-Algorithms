@@ -1,0 +1,52 @@
+package Queue;
+
+/**
+ * A collection of objects that are inserted at the rear and removed from the
+ * front according to the first-in first-out principle.
+ *
+ * @author Oluwafisayomi P. Folaranmi
+ */
+public interface Queue<E> {
+
+    /**
+     * Returns the number of elements in the queue.
+     *
+     * @return number of elements in the queue
+     */
+    int size();
+
+    /**
+     * Tests whether the queue is empty.
+     *
+     * @return true if the queue is empty, false otherwise
+     */
+    boolean isEmpty();
+
+    /**
+     * Tests whether the queue is full.
+     *
+     * @return true if the queue is full, false otherwise
+     */
+    boolean isFull();
+
+    /**
+     * Inserts an element at the rear of the queue.
+     *
+     * @param e the element to be inserted
+     */
+    void enqueue(E e);
+
+    /**
+     * Returns, but does not remove, the first element of the queue.
+     *
+     * @return first element in the queue (or null if empty)
+     */
+    E first();
+
+    /**
+     * Removes and returns the first element of the queue.
+     *
+     * @return element removed (or null if empty)
+     */
+    E dequeue();
+}
