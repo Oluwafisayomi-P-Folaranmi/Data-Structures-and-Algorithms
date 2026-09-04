@@ -4,6 +4,7 @@ public class LinkedDeque<E> implements Deque<E> {
 
     DoublyLinkedList<E> list = new DoublyLinkedList<E>();
 
+    /** Query methods */
     @Override
     public int size() {
         return list.size();
